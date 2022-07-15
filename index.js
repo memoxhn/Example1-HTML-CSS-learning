@@ -14,14 +14,17 @@ const showName = () => {
 
 const compareTwoNumbers = () => {
     const firstNumber = document.getElementById("first-number").value;   
-     const secondNumber = document.getElementById("second-number").value;  
+     const secondNumber = document.getElementById("second-number").value;
 
-    if (Number(firstNumber) > Number(secondNumber)) {
+    const myFirstNumber = Number(firstNumber);
+    const mySecondNumber = Number(secondNumber);
+
+    if (myFirstNumber > mySecondNumber) {
         alert("El primer numero es Mayor")
     }
-    if (Number(firstNumber) === Number(secondNumber)) {
+    if (myFirstNumber === mySecondNumber) {
         alert("El primer numero es igual al segundo numero ")
     }
-    if (Number(firstNumber) <  Number(secondNumber)) { alert("El primero es menor al segundo") }
+    if (myFirstNumber <  mySecondNumber) { alert("El primero es menor al segundo") }
 
 };
