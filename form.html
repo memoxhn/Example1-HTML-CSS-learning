@@ -33,5 +33,37 @@
         </section>
       </ul>
     </form>
+
+    <select id="ddlViewBy">
+      <option value="test_1">test1</option>
+      <option value="test_2">test2</option>
+      <option value="test_3" selected="selected">test3</option>
+    </select>
+    <button onclick="getSelectedValue()">Get Select Value</button>
+
+    <div id="rates">
+      Type of rate:
+      <ul>
+        <li>
+          <input type="radio" id="r1" name="rate" value="Fixed Rate" /> Fixed
+          Rate
+        </li>
+        <li>
+          <input type="radio" id="r2" name="rate" value="Variable Rate" />
+          Variable Rate
+        </li>
+        <li>
+          <input
+            type="radio"
+            id="r3"
+            name="rate"
+            value="Multi Rate"
+            checked="checked"
+          />
+          Multi Rate
+        </li>
+      </ul>
+      <button onclick="getSelectedValueFromRadioButtons()">Get Value</button>
+    </div>
   </body>
 </html>
